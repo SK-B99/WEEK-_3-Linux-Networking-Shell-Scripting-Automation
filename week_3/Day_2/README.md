@@ -10,7 +10,7 @@ Figure 3 below shows some well-known ports.
 
 Netcat’s core function is to allow two machines to connect and exchange data. I started a listener using `nc -l 6521`, which opened port 6521 on my machine. Then I used telnet to connect to the listener at IP address 172.17.224.249. TCP handled the connection between both sides. Telnet successfully reached the port, and the listener returned the message, confirming that communication worked correctly. This is shown in Figure 4 below.
 
-![Figure 4](Figure 4.png)
+![Figure 4](4.png)
 
 To identify which service is running on an unknown open port, I used this command:
 
@@ -24,4 +24,4 @@ From Figure 5, it can be seen that **Netcat (nc)** is using port 6521.
 - Port 53 (TCP & UDP): DNS
 - Port 323 (UDP): chrony (time synchronization)
 
-![Figure 5](Figure 5.png)
+![Figure 5](5.png)
